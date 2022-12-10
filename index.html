@@ -119,7 +119,7 @@
                 <!-- players end  -->
 
                 <div class="flex flex-col w-1/4 ">
-                    <div class="card w-full h-96 bg-base-100 shadow-xl mb-12 mx-4 ">
+                    <div class="card w-full h-full bg-base-100 shadow-xl mb-12 mx-4 ">
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Selected Players</h2>
                             <div class="overflow-x-auto">
@@ -131,20 +131,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card w-full h-96 bg-base-100 shadow-xl mb-12 mx-4 ">
+                    <!-- calculation section  -->
+                    <div class="card w-full h-full bg-base-100 shadow-xl mb-12 mx-4 ">
                         <div class="card-body items-center">
+                            <h2 class="card-title">Budget</h2>
                             <div class="form-control w-full max-w-xs">
                                 <label class="label">
-                                    <span class="label-text font-semibold">Per player</span>
-                                    <input type="text" placeholder="Type Amount"
+                                    <span class="label-text font-semibold  p-2">Per player</span>
+                                    <input type="text" placeholder="Type Amount" id="amount-input"
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
-                                <button class="btn btn-primary font-semibold">Calculate</button>
-                                <p class="font-semibold">Player Expenses <span>$</span>000 </p>
+                                <button class="btn btn-primary font-semibold" id="player-calculation">Calculate</button>
+                                <p class="font-semibold  p-2">Player Expenses <span>$</span><span
+                                        id="player-total">0</span>
+                                </p>
                                 <label class="label">
-                                    <span class="label-text-alt">Alt label</span>
-                                    <span class="label-text-alt">Alt label</span>
+                                    <span class="label-text font-semibold  p-2">Manager</span>
+                                    <input type="text" placeholder="Type Amount" id="manager-filed"
+                                        class="input input-bordered w-full max-w-xs" />
                                 </label>
+                                <label class="label">
+                                    <span class="label-text font-semibold  p-2">Coach</span>
+                                    <input type="text" placeholder="Type Amount" id="coach-filed"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <button class="btn btn-primary font-semibold"
+                                    id="managercoach-calculation">Calculate</button>
+                                <p class="font-semibold">Player Expenses <span>$</span><span
+                                        id="staffplayer-total">0</span>
+                                </p>
                             </div>
                         </div>
                     </div>
