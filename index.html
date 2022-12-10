@@ -12,10 +12,149 @@
     <title>Choose Your Top 5 Players </title>
 </head>
 
-<body>
+<body class="bg-black">
     <header>
         <h1>Select top 5</h1>
     </header>
+    <main>
+        <section class="w-10/12 mx-auto mt-5">
+
+            <div class="flex">
+                <!-- players all -->
+                <div class="flex flex-col w-9/12  gap-4">
+                    <!-- Players  1,2,3 -->
+                    <div class="flex flex-row w-full gap-4">
+                        <!-- player 1 -->
+                        <div class="card w-full bg-base-100 p-4 shadow-xl">
+                            <figure>
+                                <img src="./img/messi.jpg" alt="Shoes" class="w-full h-100% rounded-xl block " />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lionel Messi
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" id="Button"
+                                        onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player 1 end  -->
+                        <!-- player2  -->
+                        <div class="card w-full bg-base-100 shadow-xl p-4">
+                            <figure>
+                                <img src="./img/naymerjr.jpg" alt="Shoes" class="w-full h-100% rounded-xl block  " />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Neymar Jr
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player 2 end  -->
+                        <!-- player 3 -->
+                        <div class="card w-full bg-base-100 shadow-xl p-4">
+                            <figure>
+                                <img src="./img/mbappe.jpg" alt="Shoes" class="w-full h-100% rounded-xl block" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Kylian Mbappé
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player 3 end  -->
+                    </div>
+                    <!-- players end  -->
+                    <!-- Players 4,5,6  -->
+                    <div class="flex flex-row gap-4">
+                        <!-- player4 -->
+                        <div class="card w-full bg-base-100 p-4 shadow-xl">
+                            <figure>
+                                <img src="./img/dimaria.jpg" alt="Shoes" class="w-full h-100% rounded-xl block" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Angel Di Maria
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player 4 end  -->
+                        <!-- player 5-->
+                        <div class="card w-full bg-base-100 shadow-xl p-4">
+                            <figure>
+                                <img src="./img/dybala.jpg" alt="Shoes" class="w-full h-100% rounded-xl block " />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Paulo Dybala
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player 5 end  -->
+                        <!-- player 6 -->
+                        <div class="card w-full bg-base-100 shadow-xl p-4">
+                            <figure>
+                                <img src="./img/emiliano.jpg" alt="Shoes" class="rounded-xl block" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Emiliano Martínez
+                                </h2>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-md" onclick="addToSelectd(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- player end  -->
+
+                    </div>
+                </div>
+                <!-- players end  -->
+
+                <div class="flex flex-col w-1/4 ">
+                    <div class="card w-full h-96 bg-base-100 shadow-xl mb-12 mx-4 ">
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Selected Players</h2>
+                            <div class="overflow-x-auto">
+                                <table class="table table-zebra w-full">
+                                    <tbody id="players-table">
+                                        <!-- row 1 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full h-96 bg-base-100 shadow-xl mb-12 mx-4 ">
+                        <div class="card-body items-center">
+                            <div class="form-control w-full max-w-xs">
+                                <label class="label">
+                                    <span class="label-text font-semibold">Per player</span>
+                                    <input type="text" placeholder="Type Amount"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <button class="btn btn-primary font-semibold">Calculate</button>
+                                <p class="font-semibold">Player Expenses <span>$</span>000 </p>
+                                <label class="label">
+                                    <span class="label-text-alt">Alt label</span>
+                                    <span class="label-text-alt">Alt label</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js add  -->
+    <script src="js/players.js"></script>
 </body>
 
 </html>
