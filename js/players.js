@@ -26,51 +26,51 @@ const displaySelectedName = displayName => {
     }
 
 }
-document.getElementById('player-calculation').addEventListener('click', function () {
-    const playerInputField = document.getElementById('amount-input');
-    const playerInputFieldString = playerInputField.value;
-    const playerAmountValue = parseInt(playerInputFieldString)
-    // step-2 
-    const expencessPfield = document.getElementById('player-total');
-    const expencessPfieldString = expencessPfield.innerText;
-    const previouspalyerExpencess = parseInt(expencessPfieldString);
-    const currentPlayerExpencess = previouspalyerExpencess + (playerAmountValue * players.length);
-    expencessPfield.innerText = currentPlayerExpencess
-    playerInputField.value = "";
-    // console.log(currentPlayerExpencess);
+// document.getElementById('player-calculation').addEventListener('click', function () {
+//     const playerInputField = document.getElementById('amount-input');
+//     const playerInputFieldString = playerInputField.value;
+//     const playerAmountValue = parseInt(playerInputFieldString)
+//     // step-2 
+//     const expencessPfield = document.getElementById('player-total');
+//     const expencessPfieldString = expencessPfield.innerText;
+//     const previouspalyerExpencess = parseInt(expencessPfieldString);
+//     const currentPlayerExpencess = previouspalyerExpencess + (playerAmountValue * players.length);
+//     expencessPfield.innerText = currentPlayerExpencess
+//     playerInputField.value = "";
+//     // console.log(currentPlayerExpencess);
 
-    // expencessPfield.innerText = "";
+//     // expencessPfield.innerText = "";
 
-})
-document.getElementById('managercoach-calculation').addEventListener('click', function () {
-    const mangerInputField = document.getElementById('manager-filed');
-    const mangerInputFieldString = mangerInputField.value;
-    const managerAmountValue = parseInt(mangerInputFieldString)
+// })
+// document.getElementById('managercoach-calculation').addEventListener('click', function () {
+//     const mangerInputField = document.getElementById('manager-filed');
+//     const mangerInputFieldString = mangerInputField.value;
+//     const managerAmountValue = parseInt(mangerInputFieldString)
 
-    const coachInputField = document.getElementById('coach-filed');
-    const coachInputFieldString = coachInputField.value;
-    const coachAmountValue = parseInt(coachInputFieldString)
+//     const coachInputField = document.getElementById('coach-filed');
+//     const coachInputFieldString = coachInputField.value;
+//     const coachAmountValue = parseInt(coachInputFieldString)
 
-    const managerCoachTotal = managerAmountValue + coachAmountValue;
-    console.log(managerCoachTotal)
-    // step-2 
-    const expencessPfield = document.getElementById('player-total');
-    const expencessPfieldString = expencessPfield.innerText;
-    const previouspalyerExpencess = parseInt(expencessPfieldString);
-    const coachManagerTotalExpencess = previouspalyerExpencess + managerCoachTotal;
+//     const managerCoachTotal = managerAmountValue + coachAmountValue;
+//     console.log(managerCoachTotal)
+//     // step-2 
+//     const expencessPfield = document.getElementById('player-total');
+//     const expencessPfieldString = expencessPfield.innerText;
+//     const previouspalyerExpencess = parseInt(expencessPfieldString);
+//     const coachManagerTotalExpencess = previouspalyerExpencess + managerCoachTotal;
 
-    const totalSystemExpencess = document.getElementById('staffplayer-total')
-    const totalSystemExpencessString = totalSystemExpencess.innerText;
-    const previoustotalSystemExpencess = parseInt(totalSystemExpencessString);
+//     const totalSystemExpencess = document.getElementById('staffplayer-total')
+//     const totalSystemExpencessString = totalSystemExpencess.innerText;
+//     const previoustotalSystemExpencess = parseInt(totalSystemExpencessString);
 
-    const currentToatalexpencess = coachManagerTotalExpencess + previoustotalSystemExpencess;
+//     const currentToatalexpencess = coachManagerTotalExpencess + previoustotalSystemExpencess;
 
-    totalSystemExpencess.innerText = currentToatalexpencess
+//     totalSystemExpencess.innerText = currentToatalexpencess
 
-    mangerInputField.value = "";
-    coachInputField.value = "";
+//     mangerInputField.value = "";
+//     coachInputField.value = "";
 
-})
+// })
 
 function addToSelectd(element) {
     // console.log(element.parentNode.parentNode.children);
@@ -88,19 +88,6 @@ function addToSelectd(element) {
     players.push(selectedPlayer.playerName);
     // console.log(players)
     // console.log(players.length)
-    // document.getElementById('player-name').innerText = players.length
-    // const playerSelectedTable = document.getElementById('player-name');
-    // const playerLi = document.createElement('li');
-    // playerLi.classList.add('hover-bordered');
-    // playerLi.innerHTML = `
-    // <a>${playerName} </a>
-
-
-    // `
-    // playerSelectedTable.append(playerLi)
-    // const playerAmount = players.length * 1000;
-
-    // document.getElementById('player-amount').innerText = playerAmount;
 
     displaySelectedName(players);
 
